@@ -1,0 +1,104 @@
+      #watch{
+        width:680px;
+        height:600px;
+      }
+      .music h3{
+        position: absolute;
+        top:138px;
+        left:200px;
+        color:blue;
+      }
+      #at{
+        background-color:grey;
+        width: 30px;
+        height: 30px;
+        font-size:30px;
+        color:blue;
+        position: absolute;
+        top:530px;
+        left:260px;
+        border:none;
+        outline: none;
+        }
+        #msg{
+          background-color:grey;
+          width: 30px;
+          height: 30px;
+          font-size:30px;
+          color:blue;
+          position: absolute;
+          top:530px;
+          left:315px;
+          border:none;
+          outline: none;
+          }
+        #tr{
+          background-color:grey;
+          width: 30px;
+          height: 30px;
+          font-size:30px;
+          color:blue;
+          position: absolute;
+          top:530px;
+          left:370px;
+          border:none;
+          outline: none;
+          }
+      .time{
+        position: absolute;
+        top:130px;
+        left:410px;
+        width:90px;
+        color:white;
+      }
+      #container{
+        position: absolute;
+        top:167px;
+        left:186px;
+        background-color:white;
+        width:300px;
+        height:282px;
+      }
+      #pl{
+        position: absolute;
+        top:230px;
+        left:75px;
+        width:190px;
+        height: 90px;
+      }
+      #full{
+        position: absolute;
+        top:30px;
+        left:75px;
+        width:190px;
+        height: 90px;
+      }
+      #next{
+        position: absolute;
+        top:55px;
+        left:125px;
+      }
+      #previous{
+        position: absolute;
+        top:50px;
+        left:35px;
+      }
+      #plays{
+        position: absolute;
+        top:55px;
+        left:75px;
+      }
+      #pauses{
+        position: absolute;
+        top:55px;
+        left:75px;
+      }
+      #musicshow{
+
+        position: absolute;
+        top:15px;
+        left:75px;
+      }
+      #ak{
+        
+      }

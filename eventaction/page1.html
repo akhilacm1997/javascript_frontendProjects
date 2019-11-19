@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>first-page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">  <!-- <compactable for all device> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- <icon import bootstrap> -->
+
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Open+Sans%7CQuicksand&display=swap');
+    .link a
+    {
+         padding: 6px 8px 6px 16px;
+         text-decoration: none;
+         font-size: 20px;
+         color: white;
+         display: block;
+    }
+    .link a:hover{
+        background-color:rgb(71, 209, 71,.3);
+        color:white;
+        width: inherit;
+    }
+    .link{
+       height: 700px;
+       width: 250px;
+       position: fixed;
+       z-index: 1;
+       top: 0;
+       left: 0;
+       background-color: #111;
+       overflow-x: hidden;
+       padding-top: 16px;
+       color: white;
+       padding-left: 14px;
+
+    }
+    h2{
+      text-align: center;
+      font-family: 'Open Sans', sans-serif
+    }
+    .b1 button
+    {
+      position:absolute;
+      top:10px;
+      left:300px;
+      background-color:white ;
+      color: black;
+      cursor: pointer;
+      border-radius: 10px;
+      border: 1px solid #e0e0d1;
+      height: 30px;
+      width: 130px;
+      }
+      .b1 button:hover{
+        background-color:#23BD42;
+        color:black;
+      }
+      .b2 button
+      {
+        position:absolute;
+        top:10px;
+        left:500px;
+        background-color:white;
+        color: black;
+        cursor: pointer;
+        border-radius: 10px;
+        border: 1px solid #e0e0d1;
+        height: 30px;
+        width: 130px;
+        }
+        .b2 button:hover{
+          background-color:#23BD42;
+          color:black;
+        }
+
+        .b3 select
+        {
+          position:absolute;
+          top:10px;
+          left:1000px;
+          background-color:#2BD14C;
+          color: white;
+          cursor: pointer;
+          border-radius:5%;
+          border: 1px solid #e0e0d1;
+          height: 30px;
+          width: 130px;
+          background-color:#2BD14C;
+          color: white;
+        }
+        .b3 select :hover{
+          background-color:white;
+          color:black;
+        }
+        .b4 select
+            {
+              position:absolute;
+              top:10px;
+              left:1200px;
+              background-color:#2BD14C;
+              color: white;
+              cursor: pointer;
+              border: 1px solid #e0e0d1;
+              height: 30px;
+              width: 130px;
+              background-color:#2BD14C;
+              color: white;
+            }
+          .b4 select :hover{
+              background-color:white;
+              color:black;
+            }
+          .quick
+            {
+              position:absolute;
+              top:50px;
+              left:300px;
+
+            }
+
+              .b11 button
+                      {
+                        position:absolute;
+                        top:130px;
+                        left:300px;
+                        background-color: white;
+                        color: black;
+                        cursor: pointer;
+                        border-radius: 4px;
+                        border: 1px solid #e0e0d1;
+                        height: 50px;
+                        width: 340px;
+                      }
+              .b12 button
+                  {
+                    position:absolute;
+                    top:130px;
+                    left:650px;
+                    background-color: white;
+                    color: black;
+                    cursor: pointer;
+                    border-radius: 4px;
+                    border: 1px solid #e0e0d1;
+                    height: 50px;
+                    width: 340px;
+                  }
+                  .b13 button
+                      {
+                        position:absolute;
+                        top:130px;
+                        left:1000px;
+                        background-color: white;
+                        color: black;
+                        cursor: pointer;
+                        border-radius: 4px;
+                        border: 1px solid #e0e0d1;
+                        height: 50px;
+                        width: 340px;
+                      }
+                      #n{
+                        position:absolute;
+                        top:220px;
+                        left:300px;
+                        border-radius: 4px;
+                        border: 1px solid #e0e0d1;
+                        height: 30px;
+                        width: 250px;
+                        padding-left: 14px;
+                      }
+                      .show
+                      {
+                        position:absolute;
+                        top:210px;
+                        left:1150px;
+                      }
+
+                      .b23 select
+                      {
+                        position:absolute;
+                        top:220px;
+                        left:1200px;
+                        color: black;
+                        cursor: pointer;
+                        border-radius:5%;
+                        border: 1px solid #e0e0d1;
+                        height: 30px;
+                        width:  30px;
+                      }
+                      .entries
+                      {
+                        position:absolute;
+                        top:210px;
+                        left:1250px;
+                      }
+                      table
+                      {
+                        position:absolute;
+                        top:280px;
+                        left:300px;
+                        border-collapse: collapse;
+                        width:1000px;
+                      }
+                      tr{
+                        outline: thin solid #e0e0d1;
+                      }
+                      td{
+                        border-collapse: collapse;
+                        padding: 15px;
+                        text-align: left;
+                      }
+                      th{
+                        border-collapse: collapse;
+                        padding: 15px;
+                        text-align: left;
+                        background-color:#e0e0d1;
+                      }
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <div class="link">
+      <img src="Capture1.png"><br><br>
+      <h2>DDU-GKY</h2><br>
+      	<a href="https://glossarytech.com/terms/front_end-technologies"	><i class ="fa fa-rss"></i>&nbsp Announcement</a><br>
+       	<a href="https://glossarytech.com/terms/front_end-technologies"	><i class ="fa fa-user-circle"></i> User Management</a><br>
+       <a href="https://glossarytech.com/terms/front_end-technologies"	><i class ="fa fa-tablet"></i> Training</a><br>
+        <a href="https://glossrytech.com/terms/front_end-technologies"	><i class ="fa fa-clone"></i> Assessment</a><br>
+       <a href="https://glossrytech.com/terms/front_end-technologies"	  ><i class ="fa fa-shopping-bag"></i> Jobs Board</a><br>
+       <a href="https://glossarytech.com/terms/front_end-technologies"  ><i class ="fa fa-calendar-minus-o"></i> Calender</a><br>
+       <a href="https://glossarytech.com/terms/front_end-technologies"	><i class ="fa fa-gear"></i> Settings</a><br>
+     </div>
+     <div class="b1">
+       <button type="submit" name="button" value="submit">Student</button>
+     </div>
+     <div class="b2">
+       <button type="submit" name="button" value="submit">Admin</button>
+     </div>
+     <div class="b3">
+             <select>
+             <option value="google">Expert Users</option>>
+             <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+           <option value="audi">Audi</option>
+           </select>
+     </div>
+     <div class="b4">
+         <select>
+         <option value="google">Admin</option>>
+         <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+       <option value="audi">Audi</option>
+       </select>
+     </div>
+     <div class="tab">
+     <div class="quick">
+       <h2>Ouick Actions</h2>
+     </div>
+      </div>
+      <div class="b11">
+
+        <button type="submit" name="button" value="submit"> <i class="fa fa-users" aria-hidden="true"></i> Student Groups </button>
+
+      </div>
+      <div class="b12">
+
+        <button type="submit" name="button" value="submit"> <i class="fa fa-file-text-o" aria-hidden="true"></i> Document Verification</button>
+
+      </div>
+      <div class="b13">
+
+        <button type="submit" name="button" value="submit"><i class="fa fa-key" aria-hidden="true"></i> Attributes</button>
+
+      </div>
+        <input type="text" id="n" name="name" placeholder="Search..." required="required" />
+      <div class="show">
+        <b><p>show</p></b>
+      </div>
+      <div class="b23">
+          <select>
+          <option value="google">10</option>>
+          <option value="volvo">11</option>
+         <option value="saab">12</option>
+         <option value="fiat">13</option>
+        <option value="audi">14</option>
+        </select>
+      </div>
+      <div class="entries">
+        <b><p>entries</p></b>
+      </div>
+    <table cellspacing="2"; >
+      <tr>
+        <th>  <input type="checkbox" name="" value=""></th>
+        <th>Student ID</th>
+        <th><i class="fa fa-angle-right" aria-hidden="true"></i></th>
+        <th>Student Name</th>
+        <th>Batch</th>
+        <th>Deparment</th>
+        <th>Degree</th>
+      </tr>
+      <tr>
+        <td>  <input type="checkbox" name="" value=""></td>
+          <td>PGK-131</td>
+            <td><i class="fa fa-angle-right" aria-hidden="true" style='front-size:20px; color:green'></i></td>
+        <td>Akhila c.m</td>
+        <td>1</td>
+        <td>Electronics and communication</td>
+        <td>B-tech</td>
+      </tr>
+      <tr>
+        <td>  <input type="checkbox" name="" value=""></td>
+          <td>PGK-131</td>
+          <td><i class="fa fa-angle-right" aria-hidden="true" style='front-size:20px; color:green'></i></td>
+        <td>Jomy</td>
+        <td>2</td>
+        <td>Computer science </td>
+        <td>B-tech</td>
+      </tr>
+      <tr>
+        <td>  <input type="checkbox" name="" value=""></td>
+          <td>PGK-131</td>
+        <td><i class="fa fa-angle-right" aria-hidden="true" style='front-size:20px; color:green'></i></td>
+        <td>Shini Robin</td>
+        <td>3</td>
+        <td>Computer science</td>
+        <td>B-tech</td>
+      </tr>
+      <tr>
+        <td>  <input type="checkbox" name="" value=""></d>
+          <td>PGK-131</td>
+            <td><i class="fa fa-angle-right" aria-hidden="true" style='front-size:20px; color:green'></i></td>
+        <td>Diya Rose Robin</td>
+        <td>4</td>
+        <td>Fashion Design</td>
+        <td>B-tech</td>
+      </tr>
+      <tr>
+        <td>  <input type="checkbox" name="" value=""></d>
+          <td>PGK-131</td>
+          <td><i class="fa fa-angle-right" aria-hidden="true" style='front-size:20px; color:green'></i></td>
+        <td>Anagha Babu</td>
+        <td>5</td>
+        <td>Computer science</td>
+        <td>B-tech</td>
+      </tr>
+      <tr>
+        <td>  <input type="checkbox" name="" value=""></d>
+          <td>PGK-131</td>
+            <td><i class="fa fa-angle-right" aria-hidden="true" style='front-size:20px; color:green'></i></td>
+        <td>Jisna raju</td>
+        <td>6</td>
+        <td>Electronics and communication</td>
+        <td>B-tech</td>
+      </tr>
+      </table>
+
+
+  </body>
+</html>

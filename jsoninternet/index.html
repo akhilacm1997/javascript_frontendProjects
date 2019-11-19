@@ -1,0 +1,40 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1 id="content">hyy</h1>
+        <script>
+        
+            var xhr= new XMLHttpRequest();
+            xhr.open("get","https://jsonplaceholder.typicode.com/users");
+            
+                
+
+xhr.onload = function() {                       
+     
+     var responseObject = JSON.parse(xhr.responseText);
+
+  
+    var newContent = '';
+    for (var i = 0; i < responseObject.users.length; i++) { 
+      newContent += '<div class="student">';
+      newContent += '<p><b>' + "name: "+responseObject.users[i].id + '</b>';
+      newContent += '<br>' + "place: "+responseObject.users[i].name + '</br>';
+      newContent +=    "Qualification: "+responseObject.users[i].username + '</p>';
+      newContent += '</div>';
+    }
+
+    
+    document.getElementById('content').innerHTML = newContent;
+
+  
+};
+
+xhr.open('GET','index.json', true);        
+xhr.send(null);                                 
+
+
+        </script>
+    </body>
+</html>

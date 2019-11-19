@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>fresshgrad</title>
+    <style >
+      body{
+        background-color:#e0e0d1;
+      }
+            .img1{
+              position:absolute;
+              left:800px;
+            }
+            .logo{
+              position:absolute;
+              left:200px;
+            }
+            .credentials{
+              front-family :'open Sans'.sans-serif;
+              color:#4d4d33;
+              position:absolute;
+            top:150px;
+            left:200px;
+            }
+
+
+            #p{
+              position:absolute;
+              top:280px;
+              left:200px;
+              front-family :'open Sans'.sans-serif;
+              front-size:30px;
+              border-radius: 4px;
+              border: 1px solid #e0e0d1;
+              height: 30px;
+              width: 250px;
+              padding-left: 14px;
+
+          }
+          #n{
+            position:absolute;
+            top:220px;
+            left:200px;
+            border-radius: 4px;
+            border: 1px solid #e0e0d1;
+            height: 30px;
+            width: 250px;
+            padding-left: 14px;
+          }
+
+          button
+          {
+            position:absolute;
+            top:350px;
+            left:200px;
+            background-color: white;
+            color: black;
+            cursor: pointer;
+            border-radius: 4px;
+            border: 1px solid #e0e0d1;
+            height: 30px;
+            width: 130px;
+            }
+          .forgot
+          {
+            position:absolute;
+            top:400px;
+            left:200px;
+
+          }
+          .forgot a{
+            text-decoration: none;
+            color:green;
+          }
+          #feedback{
+            position: absolute;
+          left: 218px;
+           top: 255px;
+          }
+
+
+
+    </style>
+  </head>
+  <body>
+    <script type="text/javascript">
+   function checkuserNmae()
+   {
+     var msg1=document.getElementById("feedback");
+     var uname1=document.getElementById("n");
+      uname1.value = uname1.value.toUpperCase();
+     if(uname1.value.length<5)
+     {
+       msg1.textContent="min 5 characters";
+     }
+     else {
+       msg1.textContent="";
+     }
+   }
+   function blurFunction() {
+  // No focus = Changes the background color of input to red
+    var c=document.getElementById("n");
+    var c=document.getElementById("p");
+    c.focus();
+}
+window.addEventListener('load',blurFunction);
+  function focusing(){
+    var f= document.getElementById('n');
+      var f=document.getElementById("p");
+    f.focus();
+  }
+window.addEventListener('load',focusing);
+
+
+  //Case Study
+  // var inputBox = document.getElementById('content');
+  // inputBox.onkeyup = function(){
+  // document.getElementById('div1').innerHTML = inputBox.value;
+  // }
+  //
+  // window.addEventListener('load',checkUname)
+  // var msg2 = document.getElementById('div1');
+  // function checkUname()
+  // {
+  //   var un2 = document.getElementById('content');
+  //   un2.focus();
+  // }
+</script>
+
+
+
+    <div class="img1">
+        <img src="background.jpg" width=560 height=600 >
+    </div>
+
+    <div class="logo">
+      <img src="logo.jpg">
+    </div>
+    <div class="credentials">
+      <h2>Enter Credentials</h2>
+    </div>
+    <form class="login" action="page1.html" method="post">
+
+          <br>
+          <input type="text" id="n" name="name" placeholder="email" onblur="checkuserNmae()" onblur="blurFunction()" required="required" />
+            <br>
+            <div id="feedback">
+              <p></p>
+            </div>
+            <br>
+         <input type="password" id="p" name="password" placeholder="Password" required="required" />
+          <br>
+          <div id="feedback1">
+            <p></p>
+          <br>
+          <button type="submit" name="button" value="submit">Login</button>
+            <br>
+            <br>
+            <center><div class="logDiv">
+        Message : <input type="text" id="content"><br><br>
+        <div id="div1"></div>
+    </div></center>
+
+
+
+
+
+            </form>
+    <div class="forgot">
+      <a href="#">Forgot password?</a>
+    </div>
+
+
+
+
+
+
+
+  </body>
+</html>

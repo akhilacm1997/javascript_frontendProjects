@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <style>
+
+    </style>
+<body>
+
+<script>
+var x;
+   function over(){
+
+      x =document.getElementById('demo').innerHTML= "  Iam  sad";
+   
+        x = x.toUpperCase();
+         
+        console.log(x);
+        document.getElementById('demo').textContent=x;  
+        
+        // var y = x.toUpperCase();
+        //    console.log(y);
+   }
+   function out(){
+     document.getElementById('demo').innerHTML="  lam  happy";
+   }
+   
+</script>
+<div id="demo"  onmouseover="over()" onmouseout="out()";>
+
+  <p>click</p>
+
+
+</div>
+</body>
+</html>

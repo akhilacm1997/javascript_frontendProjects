@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <style></style>
+    <title>watch</title>
+  </head>
+  <body> <!--to give time on screen-->
+           <div id="image">
+          <img  src="siverwatch1.jpg" alt="smart watch" id="watch"><!--watch image-->
+          <div class="time">
+            <p id="te"></p>
+          </div>
+        </div>
+        <!-- content of timer page -->
+        <div id="content">
+         <div id="container">
+
+           <h3>Timer</h3>
+           <h1>timer</h1>
+           <!-- <h1><time>00:00:00</time></h1> -->
+   <button id="start" onclick="timer1()">start</button>
+   <button id="stop"onclick="stop1()">stop</button>
+   <button id="clear"onclick="cleartime()">clear</button>
+   
+          </div>
+        </div>
+         <!-- icons for music,message and timer -->
+        <div class="icons">
+            <a href="music.html" id="at" class="current"><i class="fa fa-comments-o" aria-hidden="true" id="comments"></i></a>
+         <a href="messages.html"id="msg" ><i class="fa fa-music" aria-hidden="true" id="music"></a>
+         <a href="tim.html"id="tr" ><i class="fa fa-clock-o" aria-hidden="true"id="clock" ></i></a>
+        </div>
+    
+    <script>
+
+        var h1 = document.getElementsByTagName('h1')[0],
+            start = document.getElementById('start'),
+            stop = document.getElementById('stop'),
+            clear = document.getElementById('clear'),
+            seconds = 0, minutes = 0, hours = 0,
+            t;
+        
+        function add() {
+            seconds++;
+            if (seconds >= 60) {
+                seconds = 0;
+                minutes++;
+                if (minutes >= 60) {
+                    minutes = 0;
+                    hours++;
+                }
+            }
+            
+            h1.textContent = (hours ? (hours > 9 ? hours : "0" + hours) : "00") + ":" + (minutes ? (minutes > 9 ? minutes : "0" + minutes) : "00") + ":" + (seconds > 9 ? seconds : "0" + seconds);
+        
+            timer1();
+        }
+        function timer1() {
+            t = setTimeout(add, 1000);
+        }
+        // timer();
+        
+        
+        /* Start button */
+        // start.onclick = timer;
+        
+        /* Stop button */
+        stop.onclick = function() {
+            clearTimeout(t);
+        }
+        
+        /* Clear button */
+        function cleartime() {
+            h1.textContent = "00:00:00";
+            
+        }
+        clear.onclick = function() {
+            h1.textContent = "00:00:00";
+            seconds = 0; minutes = 0; hours = 0;
+        }
+            </script>
+            <script src="watch.js" ></script>
+    </body>
+    </html>

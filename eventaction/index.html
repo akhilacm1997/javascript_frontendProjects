@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>fresshgrad</title>
+    <style >
+            .img1{
+              position:absolute;
+              left:800px;
+            }
+            .logo{
+              position:absolute;
+              left:200px;
+            }
+            .credentials{
+              front-family :'open Sans'.sans-serif;
+              color:#4d4d33;
+              position:absolute;
+            top:150px;
+            left:200px;
+            }
+
+
+            #p{
+              position:absolute;
+              top:280px;
+              left:200px;
+              front-family :'open Sans'.sans-serif;
+              front-size:30px;
+              border-radius: 4px;
+              border: 1px solid #e0e0d1;
+              height: 30px;
+              width: 250px;
+              padding-left: 14px;
+
+          }
+          #n{
+            position:absolute;
+            top:220px;
+            left:200px;
+            border-radius: 4px;
+            border: 1px solid #e0e0d1;
+            height: 30px;
+            width: 250px;
+            padding-left: 14px;
+          }
+
+          button
+          {
+            position:absolute;
+            top:350px;
+            left:200px;
+            background-color: white;
+            color: black;
+            cursor: pointer;
+            border-radius: 4px;
+            border: 1px solid #e0e0d1;
+            height: 30px;
+            width: 130px;
+            }
+          .forgot
+          {
+            position:absolute;
+            top:400px;
+            left:200px;
+
+          }
+          .forgot a{
+            text-decoration: none;
+            color:green;
+          }
+          #feedback{
+            position: absolute;
+          left: 218px;
+           top: 255px;
+          }
+
+
+
+    </style>
+  </head>
+  <body>
+    <script type="text/javascript">
+   function checkuserName1()
+   {
+       var uname1=document.getElementById("n");
+     var msg1=document.getElementById("feedback");
+
+     if(uname1.value.length<5)
+     {
+       msg1.textContent="min 5 characters";
+     }
+     else {
+       msg1.textContent="";
+     }
+   }
+    var uname1=document.getElementById("n");
+    uname1.addEventListener('blur',checkuserName);
+
+  </script>
+
+
+    <div class="img1">
+        <img src="background.jpg" width=560 height=600 >
+    </div>
+
+    <div class="logo">
+      <img src="logo.jpg">
+    </div>
+    <div class="credentials">
+      <h2>Enter Credentials</h2>
+    </div>
+    <form class="login" action="page1.html" method="post">
+
+          <br>
+          <input type="text" id="n" name="name" placeholder="email" onblur="checkuserName1()"required="required" />
+            <br>
+            <div id="feedback">
+              <p></p>
+            </div>
+            <br>
+         <input type="password" id="p" name="password" placeholder="Password"  onblur="checkuserNmae1()" required="required" />
+          <br>
+          <div id="feedback1">
+            <p></p>
+          <br>
+          <button type="submit" name="button" value="submit">Login</button>
+            <br>
+            <br>
+            </form>
+    <div class="forgot">
+      <a href="#">Forgot password?</a>
+    </div>
+
+
+
+
+
+
+
+  </body>
+</html>

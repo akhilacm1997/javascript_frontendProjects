@@ -1,0 +1,19 @@
+{
+    "students": [
+      {
+        "name":"akhila",
+        "place":"thrissur",
+        "degree":"B-tech"
+      },
+      {
+        "name":"jomy",
+        "place":"kottayam",
+        "degree":"B-tech"
+      },
+      {
+        "name":"rinu",
+        "place":"kottayam",
+        "degree":"B-tech"
+      }
+    ]
+  }

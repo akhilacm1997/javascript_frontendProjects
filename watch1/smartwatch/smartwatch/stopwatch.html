@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <title>watch</title>
+  </head>
+  <body onload="timer()"> <!--to give time on screen-->
+        <div id="image">
+          <img  src="siverwatch1.jpg" alt="smart watch" id="watch"><!--watch image-->
+           <div class="time">
+            <p id="te"></p>
+          </div>
+        </div>
+        <!-- content of music page -->
+    <div id="content">
+        <div id="container">
+          <h3>Music</h3>
+                  <audio id="myAudio">
+                          <source src="Katturumbinu Kalyanam - Male(MalluLuv.Com).mp3" type="audio/mpeg">
+                          Your browser does not support the audio element.
+                    </audio>
+                    <audio id="myAudi">
+                        <source src="Runaway.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                  </audio>
+                  <audio id="myAud">
+                      <source src=" Ballettan.mp3" type="audio/mpeg">
+                      Your browser does not support the audio element.
+                </audio>
+                <audio id="myAu">
+                    <source src="y2mate.com - poonilamazha_WUi6ipolaz8.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+              </audio>
+                 
+                    <p id="playing"></p>
+                    <div id="full" style="width: 90%;height: 20%;margin-top: 134px;">
+                    <div id="previous"><i class="fa fa-step-backward" aria-hidden="true" style="margin-top: 4px;"onclick="PreviousAudio()"></i></div>
+                    <div id="main" style="margin-top: -5%; margin-left: 93px;"> 
+                  
+                      <div id="pauses" style="visibility: hidden;"><i class="fa fa-pause"  aria-hidden="true" onclick="pauseAudio()" ></i></div>
+                      <div id="plays"> <i class="fa fa-play" class="current" aria-hidden="true" onclick="playAudio()"></i></div>
+                     <p id="musicshow">music</p>
+                  </div>
+                <div id="next"><i class="fa fa-step-forward" aria-hidden="true"style="margin-top: -1.5%;right:37%;position:absolute;"onclick="nextAudio()" ></i></div>
+          </div>
+          </div>
+        </div>
+        <!-- icons for music,message and timer -->
+       <div class="icons">
+         <a href="music.html" id="at" class="current"><i class="fa fa-comments-o" aria-hidden="true" id="comments"></i></a>
+         <a href="messages.html"id="msg" ><i class="fa fa-music" aria-hidden="true" id="music"></a>
+         <a href="tim.html"id="tr" ><i class="fa fa-clock-o" aria-hidden="true"id="clock" ></i></a>
+       </div>
+
+    <script src="watch.js" ></script>
+    <script>
+      function playAudio() { 
+        
+       
+         var x = document.getElementById("myAudio"); 
+       x.play();console.log("playing");
+          document.getElementById("playing").innerHTML="playing";
+        document.getElementById("plays").style.visibility="hidden";
+        document.getElementById("pauses").style.visibility="visible";
+     } 
+     var i=0;
+    
+     function nextAudio() 
+     { 
+        
+      
+            i++;
+            
+         var x = document.getElementById("myAudio"); 
+       x2.pause()
+            
+            if(i==1)
+              {
+              var x = document.getElementById("myAudi"); 
+              x.play();
+                  document.getElementById("musicshow").innerHTML="Runaway.mp3";
+              }
+              if(i==2)
+              {
+              var x = document.getElementById("myAud"); 
+              var x1 = document.getElementById("myAudi"); 
+              document.getElementById("musicshow").innerHTML="Ballettan.mp3";
+              x1.pause();
+              x.play();
+              }
+              if(i==3)
+              {
+              var x = document.getElementById("myAu"); 
+              var x1 = document.getElementById("myAud"); 
+              x1.pause();
+              x.play();
+              }
+              
+
+          console.log("playing");
+              document.getElementById("playing").innerHTML="playing";
+            document.getElementById("plays").style.visibility="hidden";
+            document.getElementById("pauses").style.visibility="visible";
+    } 
+     
+    function PreviousAudio() 
+     { 
+        
+      
+            i--;
+            console.log(i);
+            
+            if(i==1)
+              {
+              var x = document.getElementById("myAudi"); 
+              x.play();
+                  document.getElementById("musicshow").innerHTML="Runaway.mp3";
+              }
+              if(i==2)
+              {
+              var x = document.getElementById("myAud"); 
+              var x1 = document.getElementById("myAudi"); 
+              document.getElementById("musicshow").innerHTML="Ballettan.mp3";
+              x1.pause();
+              x.play();
+              }
+              if(i==3)
+              {
+              var x = document.getElementById("myAu"); 
+              var x1 = document.getElementById("myAud"); 
+              x1.pause();
+              x.play();
+              }
+              
+
+          console.log("playing");
+              document.getElementById("playing").innerHTML="playing";
+            document.getElementById("plays").style.visibility="hidden";
+            document.getElementById("pauses").style.visibility="visible";
+    } 
+     
+     function pauseAudio()
+      
+     { 
+              console.log("pausing");
+              var x = document.getElementById("myAudio"); 
+              x.pause(); 
+              console.log(i);
+              document.getElementById("pauses").style.visibility="hidden";
+              document.getElementById("plays").style.visibility="visible";
+         
+        if(i==1)
+              {
+              var x = document.getElementById("myAudi"); 
+              x.pause(); 
+                  document.getElementById("musicshow").innerHTML="Runaway.mp3";
+              }
+              if(i==2)
+              {
+              var x = document.getElementById("myAud"); 
+              var x1 = document.getElementById("myAudi"); 
+              document.getElementById("musicshow").innerHTML="Ballettan.mp3";
+              x.pause(); 
+              }
+              if(i==3)
+              {
+              var x = document.getElementById("myAu"); 
+              var x1 = document.getElementById("myAud"); 
+              x.pause(); 
+              }
+     
+     } 
+
+     </script>
+    </body>
+    </html>

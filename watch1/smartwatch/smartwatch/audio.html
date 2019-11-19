@@ -1,0 +1,56 @@
+<html>
+
+        <head>
+           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        </head>
+        <body>
+            
+        
+       
+       
+           <p style="color:red;">SONGS</p>
+           <!-- <div id="aud" style="left: 10px;margin-left: -46px;"> -->
+                   <audio id="myAudio">
+                           <source id="m1" src="Katturumbinu Kalyanam - Male(MalluLuv.Com).mp3" type="audio/mpeg">
+                            <source  id="m2"src="Runaway.mp3" type="audio/mpeg">
+                                <source  id="m3" src="Orasaadha.mp3" type="audio/mpeg">
+                                    <source  id="m4"src="Katturumbinu Kalyanam - Male(MalluLuv.Com).mp3" type="audio/mpeg">
+                           Your browser does not support the audio element.
+                         </audio>
+                         <div id="full">
+                         <div id="previous"><i class="fa fa-step-backward" aria-hidden="true" style="margin-top: 4px;"></i></div>
+                         <div id="main" style="margin-top: -5%; margin-left: 93px;"> 
+                       
+                       <div id="pauses" style="visibility: hidden;"><i class="fa fa-pause"  aria-hidden="true" onclick="pauseAudio()" ></i></div>
+                       <div id="plays"> <i class="fa fa-play" class="current" aria-hidden="true" onclick="playAudio()"></i></div>
+                       
+                      </div>
+                      <div id="next"><i class="fa fa-step-forward" aria-hidden="true" onclick="nextAudio()"></i></div>
+               </div>
+        <script>
+        function playAudio() { 
+           var x = document.getElementById("myAudio"); 
+         x.play();
+          document.getElementById("plays").style.visibility="hidden";
+          document.getElementById("pauses").style.visibility="visible";
+       } 
+       
+       function pauseAudio() { 
+           var x = document.getElementById("myAudio"); 
+         x.pause(); 
+          document.getElementById("pauses").style.visibility="hidden";
+          document.getElementById("plays").style.visibility="visible";
+       
+       } 
+       function nextAudio() 
+       { 
+           console.log("next");
+        var x = document.getElementById("myAudio"); 
+        x.play();
+        document.getElementById("plays").style.visibility="hidden";
+          document.getElementById("pauses").style.visibility="visible";
+       }
+       </script>
+       </body>
+       </html>
